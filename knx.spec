@@ -2,7 +2,7 @@
 Summary:	KDE client for the NX Protocol
 Name:		knx
 Version:	0.1
-Release:	0.%{_snap}.1
+Release:	0.%{_snap}.2
 License:	GPL
 Group:		Applications/Networking
 Source0:	%{name}-%{_snap}.tar.gz
@@ -44,10 +44,7 @@ rm -rf $RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post   -p /sbin/ldconfig
-%postun -p /sbin/ldconfig
-
-%files -f %{name}.lang
+%files
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_bindir}/*
 %{_libdir}/kde3/*.la
