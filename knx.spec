@@ -1,10 +1,11 @@
 %define	_snap	20060521
 Summary:	KDE client for the NX Protocol
+Summary(pl):	Klient KDE dla protoko³u NX
 Name:		knx
 Version:	0.1
 Release:	0.%{_snap}.2
 License:	GPL
-Group:		Applications/Networking
+Group:		X11/Applications/Networking
 Source0:	%{name}-%{_snap}.tar.gz
 # Source0-md5:	16cb5e4e8145d723a6dd04f1bda384a8
 BuildRequires:	autoconf
@@ -13,13 +14,18 @@ BuildRequires:	kdelibs-devel >= 9:3.2.0
 BuildRequires:	nxc-devel
 BuildRequires:	rpmbuild(macros) >= 1.129
 BuildRequires:	unsermake
-Requires:	nxssh
 Requires:	nxproxy
+Requires:	nxssh
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 A client for the NX Protocol. It can talk to the commercial/closed
 source and the free NX authentication server.
+
+%description -l pl
+Klient protoko³u NX. Potrafi komunikowaæ siê z komercyjnym (o
+zamkniêtych ¼ród³ach) jak i wolnodostêpnym serwerem uwierzytelnienia
+NX.
 
 %prep
 %setup -q -n %{name}
