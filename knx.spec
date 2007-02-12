@@ -1,6 +1,6 @@
 %define	_snap	20060521
 Summary:	KDE client for the NX Protocol
-Summary(pl.UTF-8):   Klient KDE dla protokołu NX
+Summary(pl.UTF-8):	Klient KDE dla protokołu NX
 Name:		knx
 Version:	0.1
 Release:	0.%{_snap}.2
